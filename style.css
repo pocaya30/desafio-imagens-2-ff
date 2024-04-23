@@ -45,7 +45,7 @@ body {
     left: 20px;
     margin: 0;
     opacity: 0;
-    filter: drop-shadow(5px 5px 0px #0e0000);
+    
 }
 
 .panel.active{
@@ -55,6 +55,7 @@ body {
 .panel.active h1{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+    filter: drop-shadow(5px 5px 0px #0e0000);
 }
 
 @media (max-width: 480px) {
