@@ -39,7 +39,7 @@ body {
 }
 
 .panel h1{
-    font-size: 35px;
+    font-size: 25px;
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -55,13 +55,26 @@ body {
 .panel.active h1{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
-    filter: drop-shadow(5px 5px 0px #0e0000);
+    filter: drop-shadow(2px 5px 3px #0e0000);
+}
+
+
+@media (max-width: 900px) {
+    .panel h1,
+    .panel.active h1{
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 480px) {
     .container{
         width: 100vw;
         transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .panel h1,
+    .panel.active h1{
+        visibility: hidden;
     }
 
     .panel:nth-of-type(4),
